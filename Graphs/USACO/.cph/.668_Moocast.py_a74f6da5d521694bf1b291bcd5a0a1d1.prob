@@ -1,0 +1,1 @@
+{"name":"Local: 668_Moocast","url":"d:\\a_onedrive\\OneDrive\\code\\cf\\Graphs\\USACO\\668_Moocast.py","tests":[{"id":1769504876839,"input":"4\n1 3 5\n5 4 3\n7 2 1\n6 1 1","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\a_onedrive\\OneDrive\\code\\cf\\Graphs\\USACO\\668_Moocast.py","group":"local","local":true}
