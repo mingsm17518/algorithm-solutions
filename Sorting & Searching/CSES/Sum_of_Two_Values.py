@@ -1,4 +1,3 @@
-
 n, x = map(int, input().split())
 nums = [(int(val), i) for i, val in enumerate(input().split())]
 nums.sort()
