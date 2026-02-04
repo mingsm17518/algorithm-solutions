@@ -1,3 +1,7 @@
+# https://cses.fi/problemset/task/1640
+
+# 两数之和。找到两数之和为x的两个数的下标
+
 n, x = map(int, input().split())
 nums = [(int(val), i) for i, val in enumerate(input().split())]
 nums.sort()

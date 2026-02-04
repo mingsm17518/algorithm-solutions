@@ -1,3 +1,7 @@
+# https://codeforces.com/contest/279/problem/B
+
+# 寻找连续子数组：子数组的和小于t，且最长
+
 n, t = map(int, input().split())
 timeNeed = list(map(int, input().split()))
 
