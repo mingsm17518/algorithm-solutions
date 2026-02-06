@@ -7,7 +7,7 @@ N, Q = map(int, input().split())
 
 arr = sorted(list(map(int, input().split())))
 
-def at_most(x: int) -> int:
+def at_most(arr, x: int) -> int:
     lo = 0
     hi = len(arr)
     while lo < hi:
@@ -20,5 +20,5 @@ def at_most(x: int) -> int:
 
 for _ in range(Q):
     a, b = map(int, input().split())
-    ans = at_most(b) - at_most(a - 1)
+    ans = at_most(arr, b) - at_most(arr, a - 1)
     print(ans)
