@@ -11,4 +11,4 @@ for i in range(1, n):
     else:
         ans += k + 1
 
-print(ans)
+print(ans) 
