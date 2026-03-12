@@ -1,3 +1,5 @@
+# https://usaco.org/index.php?page=viewproblem2&cpid=567
+
 import sys
 sys.stdin = open("paint.in", "r")
 sys.stdout = open("paint.out", "w")

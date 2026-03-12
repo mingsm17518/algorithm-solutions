@@ -1,4 +1,5 @@
 # https://codeforces.com/contest/581/problem/D
+
 n = 3
 arr = list(map(int, input().split()))
 

@@ -1,3 +1,5 @@
+# https://usaco.org/index.php?page=viewproblem2&cpid=915
+
 import sys
 sys.stdin = open("herding.in", "r")
 sys.stdout = open("herding.out", "w")
