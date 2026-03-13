@@ -4,21 +4,28 @@ import sys
 sys.stdin = open("billboard.in", "r")
 sys.stdout = open("billboard.out", "w")
 
-lawnmower = tuple(map(int, input().split()))
-feed = tuple(map(int, input().split()))
+x1, y1, x2, y2 = map(int, input().split())
+x3, y3, x4, y4 = map(int, input().split())
 
-left = max(lawnmower[0], feed[0])
-bottom = max(lawnmower[1], feed[1])
-right = min(lawnmower[2], feed[2])
-top = min(lawnmower[3], feed[3])
+tl = y4 >= y2 and x3 <= x1
+tr = y4 >= y2 and x4 >= x2
+br = x4 >= x2 and y4 <= y1
+bl = x3 <= x1 and y3 <= y1
 
-s1 = (lawnmower[2] - lawnmower[0]) * (lawnmower[3] - lawnmower[1]) 
+if bl and tr:
+    print(0)
+    exit()
 
-a = right - left
-b = top - bottom
-inter = a * b
+left = max(x1, x3)
+bottom = max(y1, y3)
+right = min(x2, x4)
+top = min(y2, y4)
 
-if a == feed[2] - feed[0] or b == feed[3] - feed[1]:
+s1 = (x2 - x1) * (y2 - y1)
+inter = (right - left) * (top - bottom)
+
+if tl + tr + br + bl == 2:
     print(s1 - inter)
+
 else:
     print(s1)
