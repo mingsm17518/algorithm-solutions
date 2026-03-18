@@ -1,0 +1,18 @@
+# build
+build/
+
+# vscode
+.vscode/
+
+# cph (online judge plugin)
+.cph/
+
+# executables
+*.exe
+
+# logs
+*.log
+
+# temp
+*.tmp
+*.swp
