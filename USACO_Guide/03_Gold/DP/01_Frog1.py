@@ -1,6 +1,7 @@
+INF = 10**18
 n = int(input())
 h = list(map(int, input().split()))
-INF = 10**18
+
 dp = [INF] * n
 dp[0] = 0
 

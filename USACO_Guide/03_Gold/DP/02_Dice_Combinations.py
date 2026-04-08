@@ -1,11 +1,11 @@
-n = int(input())
+x = int(input())
 
-dp = [1]
+dp = [0] * (x + 1)
+dp[0] = 1
 
 MOD = 10 ** 9 + 7
 
-for i in range(n):
-    total = sum(dp[-6:]) % MOD
-    dp.append(total)
+for i in range(1, x + 1):
+    dp[i] = sum(dp[-6:]) % MOD
 
-print(dp[-1])
+print(dp[x])
