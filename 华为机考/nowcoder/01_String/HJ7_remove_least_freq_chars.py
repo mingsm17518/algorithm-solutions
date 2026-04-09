@@ -4,8 +4,7 @@ from collections import Counter
 
 cnt = Counter(s)
 
-small = min(cnt.values())
-
-for c in s:
-    if cnt[c] != small:
-        print(c,end='')
+min_cnt = min(cnt.values())
+for ch in s:
+    if cnt[ch] != min_cnt:
+        print(ch, end='')

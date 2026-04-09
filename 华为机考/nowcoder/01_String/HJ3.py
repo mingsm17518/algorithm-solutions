@@ -1,7 +1,7 @@
 s = input().strip()
 n = len(s)
 k = 8
-need = (n + k - 1) // k * k
-s = s.ljust(need, '0')
-for i in range(0, len(s), k):
+new_len = (n + k - 1) // k * k
+s = s.ljust(new_len, '0')
+for i in range(0, new_len, k):
     print(s[i: i + k])

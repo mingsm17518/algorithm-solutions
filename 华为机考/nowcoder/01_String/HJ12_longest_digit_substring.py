@@ -1,21 +1,11 @@
-s = input().strip()
+s = list(input().strip())
 
-temp = ""
+for i in range(len(s)):
+    if not s[i].isdigit():
+        s[i] = ' '
 
-for c in s:
-    if c.isdigit():
-        temp = temp + c
-    else:
-        temp = temp + ' '
+arr = ''.join(s).split()
 
-arr = temp.split()
-
-ans = 0
-res = ""
-for d in arr:
-    ans = max(ans, len(d))
-for d in arr:
-    if len(d) == ans:
-        res = res + d
-
+ans = max(len(d) for d in arr)
+res = ''.join(x for x in arr if len(x) == ans)
 print(str(res) + ',' + str(ans))
